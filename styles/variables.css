@@ -1,0 +1,152 @@
+/* ==========================================================
+   VARIABLES.CSS
+   Design System for the Biography of Amos Website
+   ========================================================== */
+
+:root {
+  /* ======================================================
+       COLORS
+    ====================================================== */
+
+  --color-parchment: #f8f4e8;
+  --color-parchment-dark: #efe6d2;
+  --color-white: #ffffff;
+
+  --color-brown-900: #2e2218;
+  --color-brown-700: #4c3b2a;
+  --color-brown-500: #7b5a3c;
+
+  --color-gold: #c8a24d;
+  --color-gold-light: #e6c980;
+
+  --color-olive: #556b2f;
+  --color-olive-light: #6f8742;
+
+  --color-blue: #415a77;
+
+  --color-text: #2b2b2b;
+  --color-text-light: #5f5f5f;
+
+  --color-border: #d8cfbe;
+
+  --color-success: #2f7a3e;
+  --color-error: #b63a3a;
+
+  /* ======================================================
+       FONTS
+    ====================================================== */
+
+  --font-heading: "Cinzel", serif;
+  --font-body: "Lora", serif;
+  --font-scripture: "Cormorant Garamond", serif;
+
+  /* ======================================================
+       FONT SIZES
+    ====================================================== */
+
+  --fs-xs: 0.875rem;
+  --fs-sm: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.5rem;
+  --fs-xl: 2rem;
+  --fs-2xl: 3rem;
+  --fs-3xl: 4rem;
+
+  /* ======================================================
+       FONT WEIGHTS
+    ====================================================== */
+
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* ======================================================
+       SPACING
+    ====================================================== */
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: .5rem;
+  --space-2xl: 1rem;
+  --space-3xl: 3rem;
+  --space-4xl: 5rem;
+
+  /* ======================================================
+       WIDTHS
+    ====================================================== */
+
+  --content-width: 1200px;
+  --reading-width: 70ch;
+
+  /* ======================================================
+       BORDER RADIUS
+    ====================================================== */
+
+  --radius-sm: 0.4rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 2rem;
+  --radius-round: 999px;
+
+  /* ======================================================
+       SHADOWS
+    ====================================================== */
+
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+  --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+  --shadow-lg: 0 18px 40px rgba(0, 0, 0, 0.18);
+
+  /* ======================================================
+       TRANSITIONS
+    ====================================================== */
+
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 250ms ease;
+  --transition-slow: 450ms ease;
+
+  /* ======================================================
+       HEADER
+    ====================================================== */
+
+  --header-height: 5rem;
+
+  /* ======================================================
+       Z INDEX
+    ====================================================== */
+
+  --z-header: 1000;
+  --z-overlay: 1100;
+  --z-modal: 2000;
+
+  /* ======================================================
+       BREAKPOINTS
+       (Used for documentation)
+    ====================================================== */
+
+  --bp-mobile: 480px;
+  --bp-tablet: 768px;
+  --bp-laptop: 1024px;
+  --bp-desktop: 1280px;
+}
+
+/* ==========================================================
+   DARK MODE (Optional Future Feature)
+========================================================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-parchment: #1f1a15;
+    --color-parchment-dark: #2a241d;
+
+    --color-text: #f4f1eb;
+    --color-text-light: #d8d2c7;
+
+    --color-white: #2d2924;
+
+    --color-border: #4a4338;
+  }
+}

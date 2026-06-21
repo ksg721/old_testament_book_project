@@ -1,0 +1,316 @@
+/* ==========================================================
+   ANIMATIONS.CSS
+   Biography of Amos
+   ========================================================== */
+
+/* ==========================================================
+   KEYFRAMES
+========================================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes heroReveal {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatArrow {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes growLine {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero-overlay {
+  animation: heroReveal 1s ease both;
+}
+
+.hero-title {
+  animation: fadeUp 1.2s ease both;
+}
+
+.hero-description {
+  animation: fadeUp 1.5s ease both;
+}
+
+.hero .button {
+  animation: fadeUp 1.8s ease both;
+}
+
+/* ==========================================================
+   SCROLL ANIMATIONS
+========================================================== */
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.show {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* ==========================================================
+   CARD HOVER
+========================================================== */
+
+.card,
+.theme-card {
+  transition:
+    transform var(--transition-normal),
+    box-shadow var(--transition-normal);
+}
+
+.card:hover,
+.card:focus-within,
+.theme-card:hover,
+.theme-card:focus-within {
+  transform: translateY(-8px);
+
+  box-shadow: var(--shadow-lg);
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.button,
+button {
+  transition:
+    background var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.button:hover,
+button:hover {
+  transform: translateY(-2px);
+}
+
+.button:active,
+button:active {
+  transform: scale(0.98);
+}
+
+/* ==========================================================
+   NAVIGATION
+========================================================== */
+
+.navigation a {
+  position: relative;
+}
+
+.navigation a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -4px;
+
+  width: 100%;
+  height: 2px;
+
+  background: var(--color-gold);
+
+  transform: scaleX(0);
+
+  transition: transform var(--transition-fast);
+}
+
+.navigation a:hover::after,
+.navigation a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* ==========================================================
+   TIMELINE
+========================================================== */
+
+.timeline-line {
+  transform-origin: left;
+
+  animation: growLine 1.5s ease forwards;
+}
+
+.timeline li {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* ==========================================================
+   MODAL
+========================================================== */
+
+dialog[open] {
+  animation: zoomIn 0.35s ease;
+}
+
+dialog::backdrop {
+  animation: fadeIn 0.3s ease;
+}
+
+/* ==========================================================
+   MAP
+========================================================== */
+
+.map-point {
+  cursor: pointer;
+
+  transition: transform var(--transition-fast);
+}
+
+.map-point:hover,
+.map-point:focus {
+  transform: scale(1.25);
+}
+
+/* ==========================================================
+   QUIZ
+========================================================== */
+
+.correct {
+  animation: pulse 0.4s ease;
+}
+
+.incorrect {
+  animation: pulse 0.4s ease;
+}
+
+/* ==========================================================
+   IMAGE EFFECTS
+========================================================== */
+
+.card img {
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.04);
+}
+
+/* ==========================================================
+   SCROLL INDICATOR
+========================================================== */
+
+.scroll-indicator {
+  animation: floatArrow 2s infinite ease-in-out;
+}
+
+/* ==========================================================
+   ACCESSIBILITY
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+
+    transition: none !important;
+
+    scroll-behavior: auto !important;
+  }
+
+  .hidden {
+    opacity: 1;
+
+    transform: none;
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "justice",
+    "icon": "⚖️",
+    "title": "Justice",
+    "quote": "Let justice roll down like waters, and righteousness like a mighty stream.",
+    "meaning": "God requires fairness and righteousness in society, not just outward worship.",
+    "application": "Followers of God are called to defend the poor and act justly in daily life."
+  },
+  {
+    "id": "repentance",
+    "icon": "🔁",
+    "title": "Repentance",
+    "quote": "Seek the Lord and live.",
+    "meaning": "True worship requires turning away from sin.",
+    "application": "Repentance is an ongoing process of returning to God."
+  },
+  {
+    "id": "judgment",
+    "icon": "⚡",
+    "title": "Judgment",
+    "quote": "Prepare to meet your God.",
+    "meaning": "Unchecked sin leads to consequences.",
+    "application": "God’s justice is real and cannot be ignored."
+  },
+  {
+    "id": "hope",
+    "icon": "🌱",
+    "title": "Hope & Restoration",
+    "quote": "I will restore the fortunes of my people Israel.",
+    "meaning": "God always leaves room for redemption.",
+    "application": "Even after judgment, God offers restoration."
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "question": "Where was Amos originally from?",
+    "answers": ["Jerusalem", "Tekoa", "Samaria", "Egypt"],
+    "correct": 1
+  },
+  {
+    "question": "What was Amos's occupation?",
+    "answers": ["King", "Priest", "Shepherd", "Soldier"],
+    "correct": 2
+  },
+  {
+    "question": "What is a major theme of Amos?",
+    "answers": [
+      "Wealth and success",
+      "Justice and righteousness",
+      "War and conquest",
+      "Temple rituals only"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Who opposed Amos in Bethel?",
+    "answers": ["Jeroboam", "Isaiah", "Amaziah", "Elijah"],
+    "correct": 2
+  },
+  {
+    "question": "What does Amos emphasize most?",
+    "answers": [
+      "Sacrifices",
+      "Political power",
+      "Justice for the poor",
+      "Military strength"
+    ],
+    "correct": 2
+  }
+]

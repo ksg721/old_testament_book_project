@@ -1,0 +1,44 @@
+[
+  {
+    "id": "amos",
+    "name": "Amos",
+    "title": "Shepherd Prophet",
+    "location": "Tekoa, Judah",
+    "image": "images/amos.jpg",
+    "summary": "A humble shepherd chosen by God to call Israel to repentance.",
+    "facts": [
+      "Not a trained prophet",
+      "Spoke boldly against kings and priests",
+      "Emphasized justice and righteousness"
+    ],
+    "scriptures": ["Amos 1:1", "Amos 7:14-15"]
+  },
+  {
+    "id": "jeroboam",
+    "name": "Jeroboam II",
+    "title": "King of Israel",
+    "location": "Samaria",
+    "image": "images/jeroboam.jpg",
+    "summary": "A powerful king during Israel’s economic prosperity but spiritual decline.",
+    "facts": [
+      "Expanded Israel’s borders",
+      "Oversaw economic growth",
+      "Allowed widespread injustice"
+    ],
+    "scriptures": ["2 Kings 14:23-29"]
+  },
+  {
+    "id": "amaziah",
+    "name": "Amaziah",
+    "title": "Priest of Bethel",
+    "location": "Bethel",
+    "image": "images/amaziah.jpg",
+    "summary": "A priest who opposed Amos and tried to silence his prophecy.",
+    "facts": [
+      "Reported Amos to King Jeroboam",
+      "Told Amos to leave Israel",
+      "Defended corrupted religious system"
+    ],
+    "scriptures": ["Amos 7:10-17"]
+  }
+]
